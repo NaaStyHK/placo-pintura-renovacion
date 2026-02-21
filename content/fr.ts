@@ -165,7 +165,7 @@
   contact: {
     title: "Demander un devis",
     subtitle:
-      "Décrivez vos besoin (pièces, m², délais).",
+      "Décrivez vos besoin (pièces, m², délais etc).",
     form: {
       name: "Nom",
       phone: "Téléphone",
