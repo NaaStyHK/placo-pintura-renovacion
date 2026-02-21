@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import fr from "@/content/fr";
 import { Poppins } from "next/font/google";
 
@@ -24,8 +24,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
-  // ✅ Couleur UI navigateur (Android/Chrome, etc.)
-  themeColor: THEME,
+  // ❌ Next.js 16 : ne plus mettre themeColor ici
 
   openGraph: {
     type: "website",
@@ -40,6 +39,11 @@ export const metadata: Metadata = {
     title: seo.title,
     description: seo.description,
   },
+};
+
+// ✅ Next.js 16 : themeColor doit être dans viewport
+export const viewport: Viewport = {
+  themeColor: THEME,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -65,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* ✅ iOS Safari (mode “app”) */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        {/* NOTE: iOS n'accepte pas une couleur ici, seulement des styles (black / default / black-translucent) */}
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
         {/* ✅ Windows / Edge tiles */}

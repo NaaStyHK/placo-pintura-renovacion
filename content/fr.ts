@@ -1,19 +1,22 @@
-const fr = {
+ const fr = {
+  
   site: {
     name: "Placo Pintura Renovación",
-    domain: "https://exemple.com", // à remplacer plus tard
-    phone: "+33612345678", // format international
-    phoneDisplay: "06 00 00 00 00",
-    email: "contact@exemple.com",
-    city: "La Rochelle",
-    serviceArea: "La Rochelle et 30 km autour",
-    address: "La Rochelle, France", // optionnel
+    domain: "https://placo-pintura-renovacion.com", // à remplacer plus tard (ton futur domaine)
+    phone: "+34662338649", // téléphone Espagne (format international)
+    phoneDisplay: "+34 662 338 649",
+    whatsapp: "+33627171612", // WhatsApp France (format international)
+    whatsappDisplay: "+33 6 27 17 16 12",
+    email: "placopinturarenovacion@gmail.com",
+    city: "Alicante",
+    serviceArea: "Alicante et la communauté Valencienne",
+    address: "Alicante, Espagne", // optionnel
   },
 
   seo: {
-    title: "Peintre & Plaquiste à La Rochelle | Devis gratuit | Peinture & Placo",
+    title: "Peintre & Plaquiste à Alicante | Devis gratuit | Peinture & Placo",
     description:
-      "Entreprise de peinture et placo à La Rochelle : rénovation intérieure, cloisons, plafonds, isolation, finitions soignées. Devis gratuit, réponse rapide.",
+      "Placo Pintura Renovación à Alicante et en Communauté valencienne : peinture intérieure/extérieure, placo/plâtre, cloisons, plafonds, isolation, finitions soignées. Devis gratuit, réponse rapide.",
   },
 
   nav: [
@@ -24,9 +27,9 @@ const fr = {
   ],
 
   hero: {
-    title: "Peinture & Placo à Valancia",
+    title: "Peinture & Placo à Alicante",
     subtitle:
-      "Travaux propres, finitions soignées, devis gratuit. Intervention rapide sur Valancia et la region.",
+      "Travaux propres, finitions soignées, devis gratuit. Intervention rapide sur Alicante et la Communauté valencienne.",
     ctaPrimary: "Demander un devis",
     ctaSecondary: "Appeler",
     badges: ["Devis gratuit", "Chantier propre", "Finitions soignées", "Réponse rapide"],
@@ -35,10 +38,22 @@ const fr = {
   trust: {
     title: "Pourquoi nous choisir",
     items: [
-      { title: "Conseil & accompagnement", text: "Choix des finitions, peintures adaptées, solutions placo/isolation." },
-      { title: "Travaux propres", text: "Protections soignées, nettoyage en fin de chantier." },
-      { title: "Délais respectés", text: "Planning clair, communication simple." },
-      { title: "Assurance pro", text: "RC Pro / Décennale (si applicable)." },
+      {
+        title: "Conseil & accompagnement",
+        text: "Choix des finitions, peintures adaptées, solutions placo/isolation.",
+      },
+      {
+        title: "Travaux propres",
+        text: "Protections soignées, nettoyage en fin de chantier.",
+      },
+      {
+        title: "Délais respectés",
+        text: "Planning clair, communication simple.",
+      },
+      {
+        title: "Assurance pro",
+        text: "Assurance responsabilité civile professionnelle (selon prestation).",
+      },
     ],
   },
 
@@ -65,18 +80,48 @@ const fr = {
   },
 
   gallery: {
-    title: "Réalisations",
-    note: "Ajouter images dans /public/realisations (ex: r1.jpg, r2.jpg...) et metre les bons chemins ici.",
-    images: [
-      { src: "/realisations/photo-real0.jpg", alt: "Peinture intérieure – séjour rénové" },
-      { src: "/realisations/photo-real1.jpg", alt: "Placo – création de cloison" },
-      { src: "/realisations/photo-real2.jpg", alt: "Peinture plafond – finitions" },
-      { src: "/realisations/photo-real0.jpg", alt: "Rénovation peinture – chambre" },
-      { src: "/realisations/photo-real1.jpg", alt: "Placo plafond – rénovation" },
-      { src: "/realisations/photo-real2.jpg", alt: "Peinture intérieure – cuisine" },
-    ],
-  },
-
+  title: "Réalisations",
+  note: "Voici quelques réalisations réalisées par notre équipe.",
+  images: [
+    {
+      type: "beforeAfter",
+      before: "/realisations/salon-peinture-avant.jpeg",
+      after: "/realisations/salon-peinture-apres.jpeg",
+      alt: "Peinture intérieure – séjour rénové",
+    },
+    {
+      type: "beforeAfter",
+      before: "/realisations/mur-avant.jpeg",
+      after: "/realisations/mur-apres.jpeg",
+      alt: "Rénovation intérieure / Habillage mural",
+    },
+    {
+      type: "beforeAfter",
+      before: "/realisations/placo-avant.jpeg",
+      after: "/realisations/placo-apres.png",
+      alt: "Placo intérieur avant finitions",
+    },
+    {
+      type: "beforeAfter",
+      before: "/realisations/salon-peinture-avant.jpeg",
+      after: "/realisations/salon-peinture-apres.jpeg",
+      alt: "Peinture intérieure – séjour rénové",
+    },
+    {
+      type: "beforeAfter",
+      before: "/realisations/salon-peinture-avant.jpeg",
+      after: "/realisations/salon-peinture-apres.jpeg",
+      alt: "Peinture intérieure – séjour rénové",
+      
+    },
+    {
+      type: "beforeAfter",
+      before: "/realisations/salon-peinture-avant.jpeg",
+      after: "/realisations/salon-peinture-apres.jpeg",
+      alt: "Peinture intérieure – séjour rénové",
+    },
+  ],
+},
   reviews: {
     title: "Avis clients",
     items: [
@@ -98,17 +143,29 @@ const fr = {
   faq: {
     title: "Questions fréquentes",
     items: [
-      { q: "Faites-vous des devis gratuits ?", a: "Oui, le devis est gratuit. Réponse généralement sous 24h/48h." },
-      { q: "Quelle zone couvrez-vous ?", a: "Nous intervenons sur La Rochelle et ses alentours (à ajuster selon le client)." },
-      { q: "Dois-je vider la pièce ?", a: "On peut vous guider. Nous protégeons les sols et meubles (à préciser selon vos pratiques)." },
-      { q: "Travaillez-vous pour les pros ?", a: "Oui, particuliers et professionnels." },
+      {
+        q: "Faites-vous des devis gratuits ?",
+        a: "Oui, le devis est gratuit. Réponse généralement sous 24h/48h.",
+      },
+      {
+        q: "Quelle zone couvrez-vous ?",
+        a: "Nous intervenons à Alicante et dans toute la region de Valencia.",
+      },
+      {
+        q: "Dois-je vider la pièce ?",
+        a: "On peut vous guider. Nous protégeons les sols et meubles avant de démarrer.",
+      },
+      {
+        q: "Travaillez-vous pour les pros ?",
+        a: "Oui, particuliers et professionnels.",
+      },
     ],
   },
 
   contact: {
     title: "Demander un devis",
     subtitle:
-      "Décris ton besoin (pièces, m² si tu connais, délais). Tu peux aussi joindre des photos.",
+      "Décrivez vos besoin (pièces, m², délais).",
     form: {
       name: "Nom",
       phone: "Téléphone",
@@ -117,6 +174,10 @@ const fr = {
       submit: "Envoyer",
       success: "Merci ! Votre message a bien été envoyé.",
       error: "Oups… Impossible d’envoyer. Réessayez ou appelez-nous.",
+    },
+    quick: {
+      call: "Appeler",
+      whatsapp: "WhatsApp",
     },
   },
 

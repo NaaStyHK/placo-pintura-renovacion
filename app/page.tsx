@@ -41,7 +41,7 @@ export default function Page() {
       {/* ✅ IMAGE MOBILE (sous Appeler) */}
       <div className="hero-mobile-image">
         <img
-          src="/realisations/photo-real1.jpg"
+        src="/realisations/salon-peinture-apres.jpeg"
           alt="Chantier peinture et placo"
         />
       </div>
@@ -80,7 +80,7 @@ export default function Page() {
     {/* IMAGE DESKTOP (inchangée) */}
     <div className="card hero-desktop-image">
       <img
-        src="/realisations/photo-real1.jpg"
+        src="/realisations/salon-peinture-apres.jpeg"
         alt="Chantier peinture et placo"
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
