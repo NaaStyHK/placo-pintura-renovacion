@@ -185,6 +185,70 @@
     legal: "Mentions légales",
     privacy: "Politique de confidentialité",
   },
+
+  legal: {
+  mentions: {
+    title: "Mentions légales",
+    content: `
+Conformément à la loi espagnole 34/2002 du 11 juillet sur les services de la société de l'information et du commerce électronique (LSSI-CE), les informations suivantes sont portées à la connaissance des utilisateurs du site :
+
+1. Informations légales
+
+Nom commercial : PLACO PINTURA RENOVACION SL 
+Responsable : Chicahoui Djamel  
+Statut : SOCIEDAD LIMITADA  
+NIF : B26786186   
+Adresse professionnelle : CL GRAN 13, 17744 NAVATA (Girona)  
+Téléphone : +34 662 338 649  
+WhatsApp : +33 6 27 17 16 12  
+Email : placo-pintura-renovacion@gmail.com  
+
+2. Activité
+
+Travaux de peinture, plâtrerie, rénovation intérieure et pose de cloisons sèches (placo), intervention à Alicante et dans la Communauté Valencienne.
+
+3. Propriété intellectuelle
+
+Les contenus du site (textes, images, logo, etc.) sont la propriété de Placo Pintura Renovación sauf mention contraire.
+
+4. Responsabilité
+
+Placo Pintura Renovación ne pourra être tenu responsable des dommages directs ou indirects causés au matériel de l'utilisateur lors de l'accès au site.
+`
+  },
+
+  privacy: {
+    title: "Politique de confidentialité",
+    content: `
+Conformément au Règlement Général sur la Protection des Données (RGPD - UE 2016/679), nous vous informons des éléments suivants :
+
+1. Responsable du traitement
+
+Placo Pintura Renovación  
+Email : placo-pintura-renovacion@gmail.com  
+Téléphone : +34 662 338 649  
+
+2. Données collectées
+
+Via le formulaire de contact : nom, téléphone, ville, message.
+
+3. Finalité
+
+Répondre aux demandes de devis et assurer le suivi commercial.
+
+4. Durée de conservation
+
+Maximum 12 mois après le dernier contact.
+
+5. Vos droits
+
+Accès, rectification, suppression, limitation ou opposition.  
+Contact : placo-pintura-renovacion@gmail.com
+`
+  }
+}
 };
+
+
 
 export default fr;
