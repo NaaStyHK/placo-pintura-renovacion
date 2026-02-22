@@ -97,28 +97,9 @@
     },
     {
       type: "beforeAfter",
-      before: "/realisations/placo-avant.jpeg",
-      after: "/realisations/placo-apres.png",
-      alt: "Placo intérieur avant finitions",
-    },
-    {
-      type: "beforeAfter",
-      before: "/realisations/salon-peinture-avant.jpeg",
-      after: "/realisations/salon-peinture-apres.jpeg",
-      alt: "Peinture intérieure – séjour rénové",
-    },
-    {
-      type: "beforeAfter",
-      before: "/realisations/salon-peinture-avant.jpeg",
-      after: "/realisations/salon-peinture-apres.jpeg",
-      alt: "Peinture intérieure – séjour rénové",
-      
-    },
-    {
-      type: "beforeAfter",
-      before: "/realisations/salon-peinture-avant.jpeg",
-      after: "/realisations/salon-peinture-apres.jpeg",
-      alt: "Peinture intérieure – séjour rénové",
+      before: "/realisations/cloison-placo-avant.png",
+      after: "/realisations/cloison-placo-apres.png",
+      alt: "Création de cloison en placo avant finitions",
     },
   ],
 },
