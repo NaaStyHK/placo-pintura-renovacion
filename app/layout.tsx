@@ -10,7 +10,6 @@ const poppins = Poppins({
 
 const { site, seo } = fr;
 
-// Couleur principale sombre (proche de ton header/bg)
 const THEME = "#0f2747";
 
 export const metadata: Metadata = {
@@ -24,8 +23,6 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
-  // ❌ Next.js 16 : ne plus mettre themeColor ici
-
   openGraph: {
     type: "website",
     url: site.domain,
@@ -33,15 +30,24 @@ export const metadata: Metadata = {
     description: seo.description,
     siteName: site.name,
     locale: "fr_FR",
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: site.name,
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: seo.title,
     description: seo.description,
+    images: ["/icon.png"],
   },
 };
 
-// ✅ Next.js 16 : themeColor doit être dans viewport
 export const viewport: Viewport = {
   themeColor: THEME,
 };
@@ -64,20 +70,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <head>
-        {/* ✅ Fallback/compat: certains navigateurs lisent directement la meta */}
         <meta name="theme-color" content={THEME} />
-
-        {/* ✅ iOS Safari (mode “app”) */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        {/* NOTE: iOS n'accepte pas une couleur ici, seulement des styles (black / default / black-translucent) */}
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-        {/* ✅ Windows / Edge tiles */}
         <meta name="msapplication-TileColor" content={THEME} />
       </head>
 
       <body className={poppins.className}>
-        {/* JSON-LD LocalBusiness */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
