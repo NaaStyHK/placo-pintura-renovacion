@@ -27,7 +27,7 @@
   ],
 
   hero: {
-    title: "Peinture & Placo à Alicante",
+    title: "Peinture & Placo à Alicante et Valance",
     subtitle:
       "Travaux propres, finitions soignées, devis gratuit. Intervention rapide sur Alicante et la Communauté valencienne.",
     ctaPrimary: "Demander un devis",
